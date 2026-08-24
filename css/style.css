@@ -737,3 +737,62 @@ footer img {
         margin-inline: auto;
     }
 }
+
+.brochure-section {
+    background: #f5fbfd;
+    padding: 5rem 1.5rem;
+}
+
+.brochure-card {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.brochure-content {
+    background: #ffffff;
+    border: 1px solid #dce6eb;
+    border-radius: 18px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.brochure-label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+    background: rgba(19, 181, 234, 0.12);
+    color: var(--blue-500);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-radius: 999px;
+}
+
+.brochure-content h2 {
+    margin-bottom: 1rem;
+}
+
+.brochure-content p {
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+}
+
+.brochure-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+}
+
+.brochure-features li {
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.brochure-actions .btn {
+    display: inline-block;
+}
+
+.brochure-actions {
+margin-top: 2rem;
+}
