@@ -109,7 +109,7 @@ header .container {
 
 .logo-top {
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Monterrat', sans-serif;
     font-size: 0.85rem;
     font-weight: 500;
     letter-spacing: 0.18em;
@@ -125,8 +125,9 @@ header .container {
 .logo,
 .logo a {
     color: #ffffff;
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
+    
     font-weight: 600;
     letter-spacing: -0.02em;
     text-decoration: none;
@@ -275,7 +276,7 @@ nav a.active::after {
     content: '';
 }
 
-.hero-media img {
+.hero-dashboard {
     position: relative;
     width: 100%;
     aspect-ratio: 3 / 2;
@@ -656,5 +657,83 @@ footer img {
 
     .legal-content {
         border-radius: var(--radius-md);
+    }
+}
+
+.hero-visual {
+    min-width: 0;
+}
+
+.hero-media {
+    position: relative;
+}
+
+.hero-media::before {
+    position: absolute;
+    inset: -18px 18px 18px -18px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: var(--radius-lg);
+    content: '';
+    pointer-events: none;
+}
+
+.hero-dashboard {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
+    object-fit: cover;
+}
+
+.hero-badges {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 16px auto 0;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 14px;
+    background: #ffffff;
+    padding: 10px 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+}
+
+.hero-badges a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    text-decoration: none;
+}
+
+.hero-badges .xero-badge {
+    display: block;
+    width: auto;
+    max-width: none;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    object-fit: contain;
+}
+
+.hero-badges .xero-partner-badge {
+    height: 58px;
+}
+
+.hero-badges .xero-cert-badge {
+    height: 58px;
+}
+
+@media (max-width: 900px) {
+    .hero-visual {
+        width: min(100%, 680px);
+        margin-inline: auto;
     }
 }
