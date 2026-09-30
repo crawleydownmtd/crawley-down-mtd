@@ -1332,3 +1332,37 @@ button {
         transform: none;
     }
 }
+
+/* =========================================================
+   ICB PRACTICE LICENCE FOOTER
+   ========================================================= */
+
+.icb-footer {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.icb-footer a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icb-crest {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.icb-practice-number {
+    margin: 0.5rem 0 1rem;
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.footer-copyright {
+    margin: 0;
+    color: rgba(255,255,255,0.8);
+}
