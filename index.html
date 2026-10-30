@@ -38,6 +38,35 @@
             outline: 3px solid #ffbf47;
             outline-offset: 3px;
         }
+
+        /* Download cards */
+        .downloads-intro {
+            max-width: 820px;
+        }
+        .download-cards {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .download-card {
+            display: flex;
+            height: 100%;
+        }
+        .download-card .brochure-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .download-card .brochure-actions {
+            margin-top: auto;
+            padding-top: 1rem;
+        }
+        @media (max-width: 760px) {
+            .download-cards {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 
     <script type="application/ld+json">
@@ -65,13 +94,13 @@
         <div class="container">
             <div class="logo">
                 <a href="/" aria-label="Crawley Down MTD home">
-                    <img src="images/crawley-down-MTD-logo-white.webp" width="200" alt="Crawley Down MTD">
+                    <img src="images/crawley-down-MTD-logo-white.webp" width="200" height="auto" alt="Crawley Down MTD">
                 </a>
             </div>
             <nav aria-label="Main navigation">
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#who-we-help">Who we Help</a></li>
+                    <li><a href="#who-we-help">Who I Help</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#process">Process</a></li>
                     <li><a href="#faq">FAQs</a></li>
@@ -148,8 +177,8 @@
 
         <section class="section light" id="who-we-help" aria-labelledby="who-title">
             <div class="container">
-                <h2 id="who-title">Who we Help</h2>
-                <p>We support people running straightforward small businesses who want clear, practical help with bookkeeping and Making Tax Digital.</p>
+                <h2 id="who-title">Who I Help</h2>
+                <p>I support people running straightforward small businesses who want clear, practical help with bookkeeping and Making Tax Digital.</p>
                 <div class="cards">
                     <article class="card">
                         <h3>Sole Traders and Freelancers</h3>
@@ -164,31 +193,36 @@
                         <p>Cost-conscious bookkeeping for associate healthcare professionals, therapists and other service providers.</p>
                     </article>
                 </div>
-                <p>Not sure whether Making Tax Digital affects you? We can help you identify what needs checking and discuss an appropriate way to manage your records.</p>
+                <p>Not sure whether Making Tax Digital affects you? I can help you identify what needs checking and discuss an appropriate way to manage your records.</p>
             </div>
         </section>
 
         <section class="section" id="services" aria-labelledby="services-title">
             <div class="container">
-                <h2 id="services-title">Small Business Bookkeeping Services</h2>
-                <div class="cards">
-                    <article class="card">
-                        <h3>Bookkeeping</h3>
-                        <p>Monthly bookkeeping, reconciliations and digital record keeping to help keep your records accurate and up to date.</p>
+                <h2 id="services-title">Bookkeeping Support at the Level You Need</h2>
+                <p class="services-intro">Whether you want to keep control of your own bookkeeping, hand the routine work over, or need help with a one-off project, there are three straightforward ways to work with Crawley Down MTD.</p>
+                <div class="cards service-options">
+                    <article class="card service-option">
+                        <p class="service-number">OPTION 1</p>
+                        <h3>Bookkeeping Help &amp; Guidance</h3>
+                        <p class="service-price">£60 <span>per hour</span></p>
+                        <p>For businesses that want to maintain their own records but need professional guidance. Available remotely or through an agreed local face-to-face appointment.</p>
+                        <p class="service-note">One-hour minimum for face-to-face appointments.</p>
                     </article>
-                    <article class="card">
-                        <h3>Making Tax Digital Support</h3>
-                        <p>Practical help preparing for Making Tax Digital and maintaining the digital records needed for your business.</p>
+                    <article class="card service-option">
+                        <p class="service-number">OPTION 2</p>
+                        <h3>Managed Bookkeeping</h3>
+                        <p class="service-price">From £75 <span>per month</span></p>
+                        <p>For businesses that would rather have the routine bookkeeping handled for them. The final fee depends on the volume and complexity of the agreed work.</p>
                     </article>
-                    <article class="card">
-                        <h3>Cloud Software Setup</h3>
-                        <p>Setup and onboarding support for suitable cloud bookkeeping solutions, including Xero and FreeAgent.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Receipt and Record Management</h3>
-                        <p>Simple digital processes to reduce paperwork and keep business records organised throughout the year.</p>
+                    <article class="card service-option">
+                        <p class="service-number">OPTION 3</p>
+                        <h3>Bespoke / Project Support</h3>
+                        <p class="service-price service-price-quote">Quoted individually</p>
+                        <p>For setup, catch-up, tidy-up, CIS support, several accounts or entities, or another non-standard requirement. A written scope and quotation are agreed before work starts.</p>
                     </article>
                 </div>
+                <p class="service-guidance"><strong>Not sure which option fits?</strong> Start with Bookkeeping Help &amp; Guidance. If more work is needed, the next step and cost will be agreed before anything else is done.</p>
             </div>
         </section>
 
@@ -202,26 +236,35 @@
                     <li class="step">Digital setup and onboarding</li>
                     <li class="step">Ongoing bookkeeping support</li>
                 </ol>
-                <p>Meetings are arranged remotely using Microsoft Teams, making it easier to get support without travelling or dropping off paperwork.</p>
+                <p>Support can be provided remotely using Microsoft Teams or, for local businesses, through an agreed face-to-face appointment. Managed bookkeeping is normally delivered digitally to keep the process straightforward and efficient.</p>
             </div>
         </section>
 
-        <section class="brochure-section" aria-labelledby="brochure-title">
-            <div class="container brochure-card">
-                <div class="brochure-content">
-                    <span class="brochure-label">FREE DOWNLOAD</span>
-                    <h2 id="brochure-title">Download the Service Brochure</h2>
-                    <p>Learn more about Crawley Down MTD, who I help, how we work, Making Tax Digital and the cloud bookkeeping options available to small businesses.</p>
-                    <ul class="brochure-features">
-                        <li>Who we help</li>
-                        <li>How we work together</li>
-                        <li>Making Tax Digital support</li>
-                        <li>Cloud bookkeeping solutions</li>
-                        <li>Typical pricing overview</li>
-                    </ul>
-                    <div class="brochure-actions">
-                        <a href="downloads/Crawley-Down-MTD-Service-Brochure.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download service brochure (PDF, opens in a new tab)</a>
-                    </div>
+        <section class="brochure-section" aria-labelledby="downloads-title">
+            <div class="container">
+                <h2 id="downloads-title">Download Service Information</h2>
+                <p class="downloads-intro">Choose the quick service and pricing overview, or read the full brochure for more detail about Crawley Down MTD and how we can work together.</p>
+                <div class="download-cards">
+                    <article class="brochure-card download-card">
+                        <div class="brochure-content">
+                            <span class="brochure-label">QUICK OVERVIEW</span>
+                            <h3>Consultancy Services &amp; Key Terms</h3>
+                            <p>A concise two-page summary of Bookkeeping Help &amp; Guidance, Managed Bookkeeping and Bespoke / Project Support, including the key booking and service terms.</p>
+                            <div class="brochure-actions">
+                                <a href="downloads/Crawley-Down-MTD-Consultancy-Services.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download service menu (PDF, opens in a new tab)</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="brochure-card download-card">
+                        <div class="brochure-content">
+                            <span class="brochure-label">FULL BROCHURE</span>
+                            <h3>Comprehensive Service Brochure</h3>
+                            <p>Learn more about Crawley Down MTD, who I help, how we work, Making Tax Digital and the cloud bookkeeping options available to small businesses.</p>
+                            <div class="brochure-actions">
+                                <a href="downloads/Crawley-Down-MTD-Service-Brochure.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download full service brochure (PDF, opens in a new tab)</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -257,8 +300,8 @@
                         <p>Yes. The service includes practical setup and onboarding support so that the digital process is clear from the start.</p>
                     </article>
                     <article class="faq-item">
-                        <h3>Do I need to visit an office?</h3>
-                        <p>No. Meetings are arranged through Microsoft Teams, and records are shared through agreed digital systems.</p>
+                        <h3>Do I have to sign up for monthly bookkeeping?</h3>
+                        <p>No. If you prefer to maintain your own records, Bookkeeping Help &amp; Guidance is available at £60 per hour. Managed bookkeeping is available from £75 per month if you would rather hand the routine work over.</p>
                     </article>
                     <article class="faq-item">
                         <h3>Which areas do you serve?</h3>
